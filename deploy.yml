@@ -1,0 +1,18 @@
+---
+- name: Deploy Scientific Calculator
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Pull Docker Image
+      docker_image:
+        name: shashankvyas/scientificcalculator
+        source: pull
+
+    - name: Start Docker Container
+      docker_container:
+        name: scientific-calculator
+        image: shashankvyas/scientificcalculator:latest
+        state: started
+        ports:
+          - "8081:8080"
+
