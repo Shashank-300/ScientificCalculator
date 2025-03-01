@@ -15,7 +15,6 @@
     </properties>
 
     <dependencies>
-        <!-- JUnit 5 (JUnit Jupiter) -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
@@ -26,7 +25,6 @@
 
     <build>
         <plugins>
-            <!-- Ensure tests are run -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
