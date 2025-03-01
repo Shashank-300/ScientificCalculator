@@ -6,5 +6,5 @@ RUN mvn clean install
 
 FROM amazoncorretto:17
 WORKDIR /app
-COPY --from=build /app/target/JavaMavenProjectCal-1.0-SNAPSHOT.jar app.jar
+COPY --from=build /app/target/ScientificCalculator-1.0-SNAPSHOT.jar app.jar
 ENTRYPOINT ["java", "-jar", "app.jar"]
