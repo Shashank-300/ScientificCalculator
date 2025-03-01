@@ -1,7 +1,7 @@
 ---
 - name: Deploy Scientific Calculator
   hosts: localhost
-  become: yes
+  become: false
   tasks:
     - name: Pull Docker Image
       docker_image:
