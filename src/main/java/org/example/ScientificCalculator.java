@@ -7,7 +7,7 @@ public class ScientificCalculator {
     public static double squareRoot(double x) {
         return Math.sqrt(x);
     }
-
+fhsodsbsbnl
     public static long factorial(int x) {
         if (x < 0) {
             throw new IllegalArgumentException("Factorial is not defined for negative numbers.");
